@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# Google Drive Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive Google Drive-inspired web application built with **React.js** and **Firebase**, created as a hands-on project to understand modern frontend development, Firebase integration, authentication, and cloud-based file management concepts.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+* 🔐 Google Authentication using Firebase
+* 📁 Google Drive-inspired file management interface
+* ☁️ Firebase integration for cloud storage
+* 🗂️ Sidebar navigation and file-view layout
+* 🔎 Drive-style user interface
+* 👤 User profile integration
+* 📱 Responsive React-based UI
+* ⚡ Component-based frontend architecture
 
-### `yarn start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+| Technology              | Purpose                                |
+| ----------------------- | -------------------------------------- |
+| React.js                | Frontend UI and component architecture |
+| JavaScript              | Application logic                      |
+| Firebase Authentication | Google sign-in                         |
+| Firebase Storage        | Cloud file storage                     |
+| Firebase Firestore      | Data persistence                       |
+| Material UI             | UI components and icons                |
+| Create React App        | Development and build tooling          |
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📂 Project Structure
 
-### `yarn test`
+```text
+google-drive-clone/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── filesView/
+│   │   ├── header/
+│   │   ├── sidebar/
+│   │   └── sideIcons/
+│   ├── media/
+│   ├── styles/
+│   ├── App.js
+│   ├── App.css
+│   ├── firebase.js
+│   ├── index.js
+│   └── index.css
+├── .gitignore
+├── package.json
+└── yarn.lock
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Getting Started
 
-### `yarn build`
+### 1. Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/rathiraghav25/google-drive-clone.git
+cd google-drive-clone
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Using Yarn:
 
-### `yarn eject`
+```bash
+yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Or using npm:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 3. Configure Firebase
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Create a Firebase project and enable the services required by the application:
 
-## Learn More
+* Google Authentication
+* Cloud Firestore
+* Firebase Storage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Update the Firebase configuration in:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```text
+src/firebase.js
+```
 
-### Code Splitting
+For production projects, Firebase configuration and security rules should be configured appropriately for the deployment environment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Start the development server
 
-### Analyzing the Bundle Size
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Or:
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application will be available at:
 
-### Advanced Configuration
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🧠 What I Learned
 
-### Deployment
+This project helped me gain practical experience with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Building reusable React components
+* Managing application state with React hooks
+* Integrating Firebase services into a React application
+* Implementing Google authentication
+* Working with Firestore and Firebase Storage
+* Structuring a React application into reusable components
+* Managing dependencies and scripts with npm/Yarn
+* Using Git and GitHub for version control
 
-### `yarn build` fails to minify
+## 📌 Project Status
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project represents a learning implementation of a Google Drive-style application. Further improvements can include:
+
+* File upload and download workflows
+* Folder creation and navigation
+* File search and filtering
+* File deletion and management
+* Improved responsive design
+* Better Firebase security rules
+* Deployment with a production Firebase configuration
+
+## 📚 Credits & Learning Resource
+
+This project was created as a learning implementation based on the Google Drive Clone tutorial/project by **David Rakosi / Clever Programmer**.
+
+Original reference repository:
+
+https://github.com/davidrakosi/google-drive-clone
+
+The project was used as a learning reference while building and understanding the underlying React and Firebase concepts.
+
+## 📄 License
+
+This repository is intended primarily for educational and learning purposes.
